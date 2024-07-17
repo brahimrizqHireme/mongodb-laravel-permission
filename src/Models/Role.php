@@ -60,7 +60,12 @@ class Role extends Model implements RoleInterface
         $attributes['guard_name'] = $attributes['guard_name'] ?? (new Guard())->getDefaultName(static::class);
         $helpers = new Helpers();
 
-        if (static::query()->where('name', $attributes['name'])->where('guard_name', $attributes['guard_name'])->first()) {
+        $query = static::query()
+            ->where('name', $attributes['name'])
+            ->where('guard_name', $attributes['guard_name'])
+            ->first();
+
+        if ($query) {
             $name = (string)$attributes['name'];
             $guardName = (string)$attributes['guard_name'];
             throw new RoleAlreadyExists($helpers->getRoleAlreadyExistsMessage($name, $guardName));

@@ -1,7 +1,6 @@
 {
-    "name": "brahimrizq/mongodb-laravel-permission",
+    "name": "houssam/mongodb-laravel-permission",
     "description": "Permission handling for Laravel 11 and up using mongodb",
-    "version": "dev-master",
     "keywords": [
         "laravel",
         "security",
