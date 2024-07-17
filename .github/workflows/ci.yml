@@ -14,13 +14,13 @@ jobs:
         services:
             mongodb:
                 image: mongo:7.0
-                ports:
-                    - 27017:27017
                 options: >-
-                    --health-cmd "mongo --eval 'db.runCommand({ ping: 1 })'"
+                    --health-cmd "echo 'db.runCommand({ ping: 1 })' | mongosh --quiet"
                     --health-interval 10s
                     --health-timeout 5s
                     --health-retries 5
+                ports:
+                    - 27017:27017
 
         steps:
             - name: Checkout code
@@ -45,7 +45,7 @@ jobs:
             - name: Run tests
               env:
                   DB_CONNECTION: mongodb
-                  DB_HOST: 127.0.0.1
+                  DB_HOST: mongodb
                   DB_PORT: 27017
                   DB_DATABASE: laravel_permission_mongodb_test
               run: |
