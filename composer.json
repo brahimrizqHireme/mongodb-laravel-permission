@@ -1,6 +1,7 @@
 {
     "name": "houssam/mongodb-laravel-permission",
     "description": "Permission handling for Laravel 11 and up using mongodb",
+    "version": "1.0.1",
     "keywords": [
         "laravel",
         "security",
