@@ -1,0 +1,76 @@
+{
+    "name": "brahimrizq/mongodb-laravel-permission",
+    "description": "Permission handling for Laravel 11 and up using mongodb",
+    "version": "dev-master",
+    "keywords": [
+        "laravel",
+        "security",
+        "mongodb",
+        "permission",
+        "acl",
+        "brahim",
+        "houssam",
+        "spatie",
+        "jenssegers"
+    ],
+    "homepage": "https://github.com/brahimrizqHireme/laravel-permission-mongodb",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HoussamDev21",
+            "email": "Houssamrakib21@gmail.com",
+            "homepage": "https://github.com/HoussamDev21",
+            "role": "Developer"
+        },
+        {
+            "name": "Brahim rizq",
+            "email": "brahimrizq@gmail.com",
+            "homepage": "https://github.com/brahimrizqHireme",
+            "role": "Devloper"
+        },
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "The original module"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/auth": "^11.0",
+        "illuminate/container": "^11.0",
+        "illuminate/contracts": "^11.0",
+        "mongodb/laravel-mongodb": "^4.6"
+    },
+    "require-dev": {
+        "monolog/monolog": "^3.2",
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Houssam\\Permission\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Houssam\\Permission\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs --standard=psr2 src/",
+        "fix-style": "phpcbf --standard=psr2 src/"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Houssam\\Permission\\PermissionServiceProvider"
+            ]
+        }
+    }
+}
