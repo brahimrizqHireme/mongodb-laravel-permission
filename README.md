@@ -2,14 +2,7 @@
 # laravel-permission-mongodb
 
 [![Latest Version on Packagist][ico-version]][link-releases]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Scrutinizer][ico-scrutinizer]][link-scrutinizer]
-[![Maintainability][ico-codeclimate-maintainability]][link-codeclimate-maintainability]
-[![Codacy Badge][ico-codacy]][link-codacy]
-[![StyleCI][ico-styleci]][link-styleci]
-[![Coverage Status][ico-coveralls]][link-coveralls]
-[![Total Downloads][ico-downloads]][link-packagist]
+![CI](https://github.com/brahimrizqHireme/mongodb-laravel-permission/blob/main/.github/workflows/ci.yml/badge.svg)
 [![StandWithPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg)](https://sahem.ksrelief.org/Pages/ProgramDetails/1ca8852b-9e6d-ee11-b83f-005056ac5498)
 
 This package allows you to manage user permissions and roles in a database.
@@ -80,16 +73,10 @@ $user->can('edit articles');
 
 You can install the package via composer:
 
-For laravel 9.x use
+For laravel 11.x use
 
 ``` bash
-composer require mostafamaklad/laravel-permission-mongodb
-```
-
-For laravel 8.x and older use
-
-``` bash
-composer require mostafamaklad/laravel-permission-mongodb:"^3.1"
+composer require houssam/laravel-permission-mongodb
 ```
 
 You can publish [the migration](database/migrations/create_permission_collections.php.stub) with:
@@ -189,14 +176,14 @@ return [
 You can install the package via Composer:
 
 ``` bash
-composer require mostafamaklad/laravel-permission-mongodb
+composer require houssam/laravel-permission-mongodb
 ```
 
 Copy the required files:
 
 ```bash
-cp vendor/mostafamaklad/laravel-permission-mongodb/config/permission.php config/permission.php
-cp vendor/mostafamaklad/laravel-permission-mongodb/database/migrations/create_permission_collections.php.stub database/migrations/2018_01_01_000000_create_permission_collections.php
+cp vendor/houssam/laravel-permission-mongodb/config/permission.php config/permission.php
+cp vendor/houssam/laravel-permission-mongodb/database/migrations/create_permission_collections.php.stub database/migrations/2018_01_01_000000_create_permission_collections.php
 ```
 
 You will also need to create another configuration file at `config/auth.php`. Get it on the Laravel repository or just run the following command:
@@ -780,10 +767,10 @@ If you discover any security-related issues, please email dev.mostafa.maklad@gma
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 
-[link-packagist]: https://packagist.org/packages/mostafamaklad/laravel-permission-mongodb
-[ico-version]: https://img.shields.io/packagist/v/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-license]: https://img.shields.io/packagist/l/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/houssam/laravel-permission-mongodb
+[ico-version]: https://img.shields.io/packagist/v/houssam/laravel-permission-mongodb.svg?style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/houssam/laravel-permission-mongodb.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/houssam/laravel-permission-mongodb.svg?style=flat-square
 
 [link-laravel-5.2]: https://laravel.com/docs/5.2
 [ico-laravel-5.2]: https://img.shields.io/badge/Laravel-5.2.x-brightgreen.svg?style=flat-square
@@ -796,37 +783,11 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-laravel-5.6]: https://laravel.com/docs/5.6
 [ico-laravel-5.6]: https://img.shields.io/badge/Laravel-5.6.x-brightgreen.svg?style=flat-square
 
-[link-travis]: https://travis-ci.org/mostafamaklad/laravel-permission-mongodb
-[ico-travis]: https://img.shields.io/travis/mostafamaklad/laravel-permission-mongodb/master.svg?style=flat-square
+[link-travis]: https://travis-ci.org/houssam/laravel-permission-mongodb
+[ico-travis]: https://img.shields.io/travis/houssam/laravel-permission-mongodb/master.svg?style=flat-square
 
-[link-scrutinizer]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb
-[link-scrutinizer-build]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb/build-status/master
-[link-scrutinizer-coverage]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb/code-structure
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-scrutinizer-build]: https://img.shields.io/scrutinizer/build/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-scrutinizer-coverage]: https://img.shields.io/scrutinizer/coverage/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
 
-[link-coveralls]: https://coveralls.io/github/mostafamaklad/laravel-permission-mongodb
-[ico-coveralls]: https://img.shields.io/coveralls/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-
-[link-styleci]: https://styleci.io/repos/100894062
-[ico-styleci]: https://styleci.io/repos/100894062/shield?style=flat-square
-
-[link-codeclimate]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb
-[link-codeclimate-coverage]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb/coverage
-[link-codeclimate-maintainability]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb/maintainability
-[ico-codeclimate]: https://img.shields.io/codeclimate/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-codeclimate-coverage]: https://img.shields.io/codeclimate/coverage/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-codeclimate-issue-count]: https://img.shields.io/codeclimate/issues/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-codeclimate-maintainability]: https://api.codeclimate.com/v1/badges/005c3644a2db6b364514/maintainability
-
-[link-codacy]: https://www.codacy.com/app/mostafamaklad/laravel-permission-mongodb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mostafamaklad/laravel-permission-mongodb&amp;utm_campaign=Badge_Grade
-[ico-codacy]: https://api.codacy.com/project/badge/Grade/11620283b18945e2beb77e59ddc90624
-
-[link-sensiolabs]: https://insight.sensiolabs.com/projects/9a0d8b6f-1b6d-4f9f-ba87-ed9ab66b7707
-[ico-sensiolabs]: https://insight.sensiolabs.com/projects/9a0d8b6f-1b6d-4f9f-ba87-ed9ab66b7707/mini.png
-
-[link-author]: https://github.com/mostafamaklad
+[link-author]: https://github.com/houssamDev
 [link-contributors]: ../../contributors
 [link-releases]: ../../releases
 [link-laravel-permission]: https://github.com/spatie/laravel-permission

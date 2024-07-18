@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/mostafamaklad/laravel-permission-mongodb).
+We accept contributions via Pull Requests on [Github](https://github.com/houssam/laravel-permission-mongodb).
 
 
 ## Pull Requests
